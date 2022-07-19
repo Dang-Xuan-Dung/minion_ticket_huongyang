@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    max-width: 100%;
+    border-radius: 5rem;
+}
+
+body{
+   height: 100vh;
+    background: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(222, 168, 248, 1) 0%,
+        rgba(168, 222, 248, 1) 21.8%,
+        rgba(189, 250, 205, 1) 35.6%,
+        rgba(243, 250, 189, 1) 52.9%,
+        rgba(250, 227, 189, 1) 66.8%,
+        rgba(248, 172, 172, 1) 90%,
+        rgba(254, 211, 252, 1) 99.7%
+      ) no-repeat;
+    }
+    
+
+a{
+    display: block;
+    text-decoration: none;
+   color:rgba(248, 172, 172, 1) ;
+   transition: all 0.25s linear;
+
+   &:hover{
+    color:rgba(253, 101, 133, 1);
+   }
+}
+    
+
+
+.ticket{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    
+
+    &-button{
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+        margin-top: 50px;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 2px solid rgb(45, 165, 165);
+        background: linear-gradient(
+            114.2deg,
+            rgba(121, 194, 243, 1) 22.6%,
+            rgba(255, 180, 239, 1) 67.7%
+        );
+
+        &:hover{
+            background: radial-gradient(
+                circle farthest-corner at 10% 20%,
+                rgba(253, 101, 133, 1) 0%,
+                rgba(255, 211, 165, 1) 90%
+              );
+        }
+    }
+
+
+    @media screen and(max-width :767px) {
+        width: 300px;
+        margin-top: 100px;
+
+
+        &-button{
+            width: 222px;
+        }
+    }
+}
+
+.modal{
+        width: 1000px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+        &-dialog{
+            max-width: 1000px;
+        }
+
+
+        &-invite{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i{
+                padding-left: 5px;
+            }
+            
+        }
+
+
+        &-footer{
+            justify-content: space-between;
+
+        .footer-infor p{
+            margin: 0;
+        
+        }
+
+
+        
+
+        }
+
+
+        .button-yes{
+            background: radial-gradient(
+                circle farthest-corner at 10% 20%,
+                rgba(253, 101, 133, 1) 0%,
+                rgba(255, 211, 165, 1) 90%
+              );;
+        }
+
+
+        .button-no{
+            background: linear-gradient(
+                109.6deg,
+       
+                rgba(253, 29, 29, 1) 55.2%,
+                rgba(252, 176, 69, 1) 91.1%
+              );
+        }
+
+        .btn-close{
+            display: none;
+        }
+
+
+
+
+       
+        @media screen and(max-width :767px) {
+            width: 375px;
+            
+        }
+
+}
